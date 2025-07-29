@@ -39,7 +39,7 @@ if ingredients_list:
         st.subheader(fruit_chosen + ' Nutrition Information')
         sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
-    st.write(ingredients_string)
+    # st.write(ingredients_string)
 
     my_insert_stmt = """
         INSERT INTO SMOOTHIES.PUBLIC.ORDERS (INGREDIENTS, NAME_ON_ORDER)
